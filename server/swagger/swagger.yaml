@@ -1,0 +1,23 @@
+openapi: 3.0.0
+info:
+  title: API de Gestión de Clientes
+  description: API para gestionar clientes
+  version: 1.0.0
+paths:
+  /api/customers:
+    get:
+      summary: Obtiene todos los clientes
+      responses:
+        '200':
+          description: Lista de clientes obtenida correctamente
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                    name:
+                      type: string
