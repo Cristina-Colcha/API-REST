@@ -55,7 +55,7 @@ API-REST/
 
 ## Uso
 
-- Ejecuta `npm start` para iniciar el servidor.
+- Ejecuta `node server/index.js` para iniciar el servidor.
 - Puedes acceder al API a través de `http://localhost:3000/api-docs`.
 
 ## Endpoints
