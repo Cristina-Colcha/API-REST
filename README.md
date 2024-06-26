@@ -82,8 +82,8 @@ Response:
 Las contribuciones son bienvenidas. Si deseas mejorar este proyecto, por favor abre un issue para discutir los cambios propuestos.
 
 Autor
-Nombre: [Tu nombre]
-GitHub: [Enlace a tu perfil de GitHub]
+Nombre: [Cristina Colcha, Edwin Proaño]
+GitHub: https://github.com/Cristina-Colcha/API-REST.git
 
 ### Paso 4: Ejecución del API
 
