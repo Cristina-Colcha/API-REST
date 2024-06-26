@@ -1,93 +1,91 @@
 
 
-# Proyecto REST API en JavaScript
+# REST API project in JavaScript
 
-Este proyecto implementa una REST API básica utilizando JavaScript y Express.js para la creación de un sistema de gestión de clientes. Incluye tanto el servidor como un cliente mínimo para interactuar con la API.
+This project implements a basic REST API using JavaScript and Express.js for creating a customer management system. It includes both the server and a minimal client to interact with the API.
 
-## Estructura del Proyecto
+## Project Structure
 
-El proyecto está organizado de la siguiente manera:
+The project is organized as follows:
 
 API-REST/
 │
-├── server/              # Carpeta del servidor
-│   ├── index.js         # Archivo principal del servidor
-│   ├── controllers/     # Controladores para manejar peticiones
-│   ├── models/          # Modelos de datos
-│   ├── routes/          # Rutas de la API
-│   ├── services/        # Lógica de negocio
-│   └── swagger/         # Configuración de Swagger
-│       └── swagger.yaml # Archivo de especificación OpenAPI (Swagger)
+├── server/ # Server folder
+│ ├── index.js # Server main file
+│ ├── controllers/ # Controllers to handle requests
+│ ├── models/ # Data models
+│ ├── routes/ # API routes
+│ ├── services/ # Business logic
+│ └── swagger/ # Swagger Settings
+│ └── swagger.yaml # OpenAPI specification file (Swagger)
 │
-├── client/              # Carpeta del cliente (opcional si no hay cliente)
-│   ├── index.html       # Página de inicio del cliente
-│   ├── script.js        # Scripts del cliente
-│   └── style.css        # Estilos del cliente (opcional)
+├── client/ # Client folder (optional if there is no client)
+│ ├── index.html # Client home page
+│ ├── script.js # Client scripts
+│ └── style.css # Client styles (optional)
 │
-├── README.md            # Documentación del proyecto (en inglés)
-└── package.json         # Archivo de configuración de Node.js
+├── README.md # Project documentation (in English)
+└── package.json # Node.js configuration file
 
 
 
-## Funcionalidades Implementadas
+## Implemented Functionalities
 
-- **Operaciones CRUD**: Permite la gestión básica de clientes (Crear, Leer, Actualizar, Eliminar).
-- **API RESTful**: Implementación de endpoints REST para interactuar con los clientes.
+- **CRUD Operations**: Allows basic client management (Create, Read, Update, Delete).
+- **RESTful API**: Implementation of REST endpoints to interact with clients.
 
-## Tecnologías Utilizadas
+## Used technology
 
-- **Node.js**: Entorno de ejecución para JavaScript del lado del servidor.
-- **Express.js**: Framework web para Node.js utilizado para la creación de la API REST.
-- **Fetch API**: Utilizado en el cliente para realizar peticiones HTTP al servidor.
+- **Node.js**: Execution environment for server-side JavaScript.
+- **Express.js**: Web framework for Node.js used to create the REST API.
+- **Fetch API**: Used on the client to make HTTP requests to the server.
 
-## Instalación y Ejecución
+## Installation and Execution
 
-1. **Clonar el repositorio**:
+1. **Clone the repository**:
 
-   ```bash
-   git clone <url-del-repositorio>
-   cd <nombre-del-proyecto>
+ ```bash
+ git clone <repository-url>
+ cd <project-name>
 
-## Instalación
+## Facility
 
-1. Clona este repositorio.
-2. Instala las dependencias usando `npm install`.
+1. Clone this repository.
+2. Install the dependencies using `npm install`.
 
-## Uso
+## Use
 
-- Ejecuta `node server/index.js` para iniciar el servidor.
-- Puedes acceder al API a través de `http://localhost:3000/api-docs`.
+- Run `node server/index.js` to start the server.
+- You can access the API through `http://localhost:3000/api-docs`.
 
 ## Endpoints
 
-- `GET /customers`: Obtener todos los clientes.
-- `GET /customers/:id`: Obtener un cliente por ID.
-- `POST /customers`: Crear un nuevo cliente.
-- `PUT /customers/:id`: Actualizar un cliente por ID.
-- `DELETE /customers/:id`: Eliminar un cliente por ID.
+- `GET /customers`: Get all customers.
+- `GET /customers/:id`: Get a customer by ID.
+- `POST /customers`: Create a new customer.
+- `PUT /customers/:id`: Update a customer by ID.
+- `DELETE /customers/:id`: Delete a customer by ID.
+-
+## Contributions
 
-## Ejemplos
+
+Contributions are welcome. If you would like to improve this project, please open an issue to discuss the proposed changes.
+
+Author
+Name: [Cristina Colcha, Edwin Proaño]
+GitHub: https://github.com/Cristina-Colcha/API-REST.git
+
+### Step 4: Running the API
+
+- Run `node server/index.js` to start the server.
+- You can access the API through `http://localhost:3000/api-docs`.
 
 ### GET /customers
 
 Response:
 ```json
 {
-  "message": "Obtener todos los clientes"
+ "message": "Get all customers"
 }
 
-# Contribuciones
 
-
-Las contribuciones son bienvenidas. Si deseas mejorar este proyecto, por favor abre un issue para discutir los cambios propuestos.
-
-Autor
-Nombre: [Cristina Colcha, Edwin Proaño]
-GitHub: https://github.com/Cristina-Colcha/API-REST.git
-
-### Paso 4: Ejecución del API
-
-Para ejecutar el API, asegúrate de que estás en la carpeta del proyecto y ejecuta:
-
-```bash
-npm start
